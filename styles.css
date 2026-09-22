@@ -104,7 +104,8 @@ a { color: var(--emerald-700); }
 .hero-copy { max-width: 620px; flex: 1; min-width: 0; }
 .hero-image {
   width: 420px; max-width: 38%; height: auto;
-  opacity: 0.8; border-radius: var(--radius);
+  opacity: 1; mix-blend-mode: multiply;
+  border-radius: var(--radius);
 }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
