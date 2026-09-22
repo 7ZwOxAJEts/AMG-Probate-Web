@@ -59,8 +59,9 @@ a { color: var(--emerald-700); }
 }
 .brand { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; }
 .brand-logo {
-  width: 40px; height: 40px;
-  color: var(--emerald-700);
+  width: 52px; height: 33px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
   flex-shrink: 0;
 }
 .brand-mark {
@@ -494,7 +495,7 @@ a { color: var(--emerald-700); }
   .strength:nth-child(4) { border-left-color: var(--mulberry-700); }
   .services-grid, .stats { grid-template-columns: 1fr; }
   .stat-card + .stat-card { border-left: 0; border-top: 1px solid var(--line); }
-  .brand-logo { width: 34px; height: 34px; }
+  .brand-logo { width: 44px; height: 28px; }
   .works-list { columns: 1; }
   .contact-spotlight { grid-template-columns: 1fr; }
   .contact-item { grid-template-columns: 1fr; gap: 12px; }
