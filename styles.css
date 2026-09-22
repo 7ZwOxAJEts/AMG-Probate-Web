@@ -335,8 +335,8 @@ a { color: var(--emerald-700); }
 .works-note { color: var(--muted); font-size: 0.92rem; margin: 0; }
 
 /* Who we are */
-.who-copy { max-width: 70ch; }
-.who-copy p { color: #2c3532; }
+.who-copy { max-width: none; columns: 2; column-gap: 3rem; }
+.who-copy p { color: #2c3532; break-inside: avoid; }
 
 /* Approach */
 .section-approach { background: var(--emerald-900); color: #e6f0ea; }
