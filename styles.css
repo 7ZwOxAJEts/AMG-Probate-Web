@@ -103,7 +103,7 @@ a { color: var(--emerald-700); }
 .hero-inner { display: flex; align-items: center; gap: 2.5rem; }
 .hero-copy { max-width: 620px; flex: 1; min-width: 0; }
 .hero-image {
-  width: 420px; max-width: 38%; height: auto;
+  width: 520px; max-width: 45%; height: auto;
   opacity: 1; mix-blend-mode: multiply;
   border-radius: var(--radius);
 }
