@@ -343,26 +343,13 @@ a { color: var(--emerald-700); }
 .section-approach h2 { color: #fff; }
 .section-approach .lead { color: #fff; }
 .approach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; }
-.approach-values { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 1rem; }
-.approach-values span {
-  border: 1px solid rgba(255, 255, 255, 0.22); color: rgba(255, 255, 255, 0.82);
-  font-weight: 700; font-size: 0.78rem;
-  padding: 0.4rem 0.85rem; border-radius: var(--radius);
-  text-transform: uppercase; letter-spacing: 0.06em;
-}
 .approach-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
 .approach-steps li {
-  display: grid; grid-template-columns: 48px 1fr; gap: 20px;
+  display: grid; grid-template-columns: 1fr; gap: 20px;
   padding: 1.3rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 .approach-steps li:first-child { padding-top: 0; }
-.approach-steps > li > span {
-  padding-top: 4px;
-  color: #9cb9a8;
-  font-size: 0.72rem; font-weight: 700;
-  letter-spacing: 0.14em;
-}
 .approach-steps h3 {
   color: #fff;
   font-family: var(--serif);
