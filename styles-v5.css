@@ -46,6 +46,11 @@ a { color: var(--emerald-700); }
 }
 .skip-link:focus { left: 0; }
 
+::selection {
+  background: var(--mulberry-700);
+  color: #fff;
+}
+
 /* Header */
 .site-header {
   position: sticky; top: 0; z-index: 50;
@@ -202,6 +207,7 @@ a { color: var(--emerald-700); }
 }
 .about-tenure,
 .section-services .lead,
+.section-privacy .lead,
 .contact-intro .lead {
   font-family: var(--serif);
   font-weight: 400;
@@ -367,6 +373,66 @@ a { color: var(--emerald-700); }
   font-style: normal; color: var(--muted);
   font-size: 0.9rem; line-height: 1.5;
 }
+.contact-company { display: block; margin-top: 0.75rem; }
+
+/* Privacy policy page — frame around the OneTrust notice (content untouched) */
+.section-privacy .section-title { color: var(--emerald-900); }
+.section-privacy .lead { margin: 0.35rem 0 0; }
+.privacy-notice {
+  margin-top: 2.5rem;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.privacy-notice .otnotice,
+.privacy-notice .otnotice :where(h1, h2, h3, h4, p, li, dt, dd, th, td, div, span, a) {
+  font-family: var(--font);
+}
+.privacy-notice .otnotice {
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.privacy-notice .otnotice :where(h1, h2, h3, h4) {
+  font-family: var(--serif);
+  font-weight: 400;
+  color: var(--emerald-900);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 1.6rem 0 0.6rem;
+}
+.privacy-notice .otnotice h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); color: var(--emerald-950); }
+.privacy-notice .otnotice h2 { font-size: clamp(1.25rem, 2.4vw, 1.75rem); }
+.privacy-notice .otnotice :where(h3, h4) { font-family: var(--font); font-weight: 700; font-size: 1.05rem; color: var(--ink); }
+.privacy-notice .otnotice :where(h1, h2, h3, h4):first-child { margin-top: 0; }
+.privacy-notice .otnotice p,
+.privacy-notice .otnotice li { color: var(--ink); }
+.privacy-notice .otnotice p { margin: 0 0 1rem; }
+.privacy-notice .otnotice :where(ul, ol) { padding-left: 1.3rem; margin: 0 0 1rem; }
+.privacy-notice .otnotice li { margin-bottom: 0.4rem; }
+.privacy-notice .otnotice a { color: var(--emerald-700); }
+.privacy-notice .otnotice a:hover { color: var(--mulberry-700); }
+.privacy-notice .otnotice :where(strong, b) { color: var(--emerald-950); }
+.privacy-notice .otnotice :where(hr, tr, td, th) { border-color: var(--line); }
+.privacy-notice .otnotice table { border-collapse: collapse; width: 100%; margin: 0 0 1.25rem; }
+.privacy-notice .otnotice :where(td, th) { padding: 0.6rem 0.75rem; text-align: left; border: 1px solid var(--line); }
+.privacy-notice .otnotice th { background: var(--emerald-100); color: var(--emerald-950); font-weight: 700; }
+.privacy-notice .otnotice :where(button, .otnotice-btn, input[type="button"], input[type="submit"]) {
+  font-family: var(--font);
+  background: var(--emerald-700);
+  color: #fff;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.privacy-notice .otnotice :where(button, .otnotice-btn):hover { background: var(--mulberry-700); }
+@media (max-width: 600px) {
+  .section-privacy .lead { font-size: clamp(2.35rem, 7.5vw, 3rem); }
+  .privacy-notice { margin-top: 2rem; padding: 1.25rem 1rem; }
+}
 
 /* Footer */
 .site-footer { background: var(--emerald-950); color: #cfe0d6; border-top: 3px solid var(--mulberry-700); }
@@ -378,7 +444,7 @@ a { color: var(--emerald-700); }
 .footer-nav { display: flex; gap: 1rem; flex-wrap: wrap; }
 .footer-nav a { color: #cfe0d6; text-decoration: none; }
 .footer-nav a:hover { color: #fff; }
-.footer-bottom { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: 1rem 0 1.4rem; font-size: 0.9rem; }
+.footer-bottom { display: flex; justify-content: flex-end; gap: 1rem; flex-wrap: wrap; padding: 1rem 0 1.4rem; font-size: 0.9rem; }
 .footer-bottom a { color: #fff; }
 
 /* Back to top */
