@@ -9,7 +9,7 @@
     if (window.scrollY > 8) header.classList.add('scrolled');
     else header.classList.remove('scrolled');
     if (backToTop) {
-      if (window.scrollY > 600) backToTop.classList.add('visible');
+      if (window.scrollY > 300) backToTop.classList.add('visible');
       else backToTop.classList.remove('visible');
     }
   }
