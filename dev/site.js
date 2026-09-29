@@ -35,8 +35,8 @@
   // Scroll reveal: JS adds .reveal so content stays visible without JS
   var revealTargets = document.querySelectorAll(
     '.strengths > *, .stat-card, .about-values > *, .service-card, ' +
-    '.approach-steps > li, .contact-item, .contact-spotlight, ' +
-    '.works-intro, .works-details, .who-copy > p, .section-intro-grid > div, ' +
+    '.approach-steps > li, .contact-item, ' +
+    '.works-details, .who-copy > p, .section-intro-grid > div, ' +
     '.stats'
   );
   Array.prototype.forEach.call(revealTargets, function (el) {

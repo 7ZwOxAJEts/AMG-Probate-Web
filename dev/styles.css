@@ -316,18 +316,6 @@ a {
   background: var(--emerald-950);
 }
 
-.button-light {
-  background: #fff;
-  color: var(--emerald-900);
-  border-color: #fff;
-}
-
-.text-link {
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--mulberry-700);
-}
-
 /* Strengths — floating cards with alternating accents */
 .strengths {
   position: relative;
