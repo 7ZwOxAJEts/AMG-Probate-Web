@@ -452,7 +452,6 @@ a {
 
 .about-tenure,
 .section-services .lead,
-.section-faqs .lead,
 .section-privacy .lead,
 .contact-intro .lead {
   font-family: var(--serif);
@@ -688,14 +687,11 @@ a {
   background: #fff;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-}
-
-.section-faqs .lead {
-  margin: 0.35rem 0 0;
+  padding-bottom: 3rem;
 }
 
 .section-faqs .faq-list {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .faq-list {
