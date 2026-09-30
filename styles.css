@@ -254,8 +254,6 @@ a {
 }
 
 .hero-copy {
-  position: relative;
-  z-index: 1;
   max-width: min(640px, 58%);
   flex: 1;
   min-width: 0;
@@ -263,11 +261,11 @@ a {
 
 .hero-image {
   position: absolute;
-  right: -188px;
+  right: -4%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 0;
-  width: min(910px, 77%);
+  width: min(960px, 72%);
   max-width: none;
   height: auto;
   opacity: 0.55;
