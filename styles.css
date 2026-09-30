@@ -84,6 +84,7 @@ h1 {
 
 h1 em {
   font-style: italic;
+  color: var(--mulberry-700);
 }
 
 h2 {
