@@ -82,6 +82,10 @@ h1 {
   margin-bottom: 1.1rem;
 }
 
+h1 em {
+  font-style: italic;
+}
+
 h2 {
   font-size: clamp(1.5rem, 3vw, 2.2rem);
   color: var(--emerald-900);
